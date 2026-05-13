@@ -2,10 +2,10 @@ const mineflayer = require('mineflayer');
 
 function createBot() {
     const bot = mineflayer.createBot({
-        host: 'TUTAJ_WPISZ_IP_SERWERA.aternos.me', 
-        port: 25565,                             
+        host: 'SerwerKlasowyJD.aternos.me', 
+        port: 58081,                             
         username: 'Bot24_7',                     
-        version: '1.20.1' // wpisz wersję swojego serwera
+        version: '26.1.2' // wpisz wersję swojego serwera
     });
 
     bot.on('spawn', () => {
