@@ -23,4 +23,9 @@ function createBot() {
     bot.on('error', (err) => console.log(err));
 }
 
-createBot();
+createBot(const http = require('http');
+http.createServer((req, res) => {
+    res.write('Bot dziala');
+    res.end();
+}).listen(process.env.PORT || 3000);
+);
