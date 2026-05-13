@@ -1,11 +1,12 @@
 const mineflayer = require('mineflayer');
+const http = require('http');
 
 function createBot() {
     const bot = mineflayer.createBot({
         host: 'SerwerKlasowyJD.aternos.me', 
         port: 58081,                             
         username: 'Bot24_7',                     
-        version: '1.20.4' // wpisz wersję swojego serwera
+        version: '1.20.4'
     });
 
     bot.on('spawn', () => {
@@ -20,11 +21,13 @@ function createBot() {
         setTimeout(createBot, 10000);
     });
 
-    bot.on('error', (err) => console.log(err));
+    bot.on('error', (err) => {
+        console.log('Blad bota: ', err);
+    });
 }
 
-createBot():
-const http = require('http');
+createBot();
+
 http.createServer((req, res) => {
     res.write('Bot dziala');
     res.end();
