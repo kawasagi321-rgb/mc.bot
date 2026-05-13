@@ -5,7 +5,7 @@ function createBot() {
         host: 'SerwerKlasowyJD.aternos.me', 
         port: 58081,                             
         username: 'Bot24_7',                     
-        version: '26.1.2' // wpisz wersję swojego serwera
+        version: '1.20.4' // wpisz wersję swojego serwera
     });
 
     bot.on('spawn', () => {
