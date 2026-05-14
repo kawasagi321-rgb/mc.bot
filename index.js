@@ -3,8 +3,10 @@ const http = require('http');
 
 function createBot() {
     const bot = mineflayer.createBot({
-        host: 'testbota.aternos.me', 
-        port: 25565,                             
+        host: 'tapir.aternos.host',
+', 
+        port: 51145,
+,                             
         username: 'Bot24_7',                     
         version: '1.20.4'
     });
